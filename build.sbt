@@ -22,7 +22,7 @@ lazy val `akka-reasonable-downing` =
 lazy val library =
   new {
     object Version {
-      val akka      = "2.5.7"
+      val akka      = "2.5.4"
       val scalaTest = "3.0.4"
     }
     val akkaCluster   = "com.typesafe.akka" %% "akka-cluster"            % Version.akka
@@ -51,7 +51,7 @@ lazy val commonSettings =
       )
     ),
     scalaVersion := "2.12.4",
-    crossScalaVersions := Seq("2.11.11", "2.12.4"),
+    crossScalaVersions := Seq("2.11.12", "2.12.4"),
     releaseCrossBuild := true,
     releasePublishArtifactsAction := PgpKeys.publishSigned.value,
     scalacOptions ++= Seq(
